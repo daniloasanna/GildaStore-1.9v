@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="8dp" android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNProduto"
+        android:layout_alignParentLeft="true"
+        android:text="Produto"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/traco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:text="-"
+        android:layout_toRightOf="@id/textViewNProduto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade"
+        android:id="@+id/textViewQtdProduto"
+        android:textSize="17dp"
+        android:layout_marginLeft="6dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_toRightOf="@+id/traco"/>
+
+    <TextView
+        android:id="@+id/traco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/textViewQtdProduto"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:id="@+id/textViewMarcaProduto"
+        android:layout_marginLeft="6dp"
+        android:textSize="17dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_toRightOf="@id/traco2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alterar"
+        android:textColor="#B9925E"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/textViewAlterar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="#c20A10"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/textViewDelete"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

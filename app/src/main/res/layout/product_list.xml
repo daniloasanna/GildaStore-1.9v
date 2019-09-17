@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="8dp" android:orientation="vertical"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNProduto"
+        android:layout_alignParentLeft="true"
+        android:text="Produto"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewqtd"
+        android:textSize="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNProduto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        android:text="Quantidade: " />
+
+    <TextView
+        android:id="@+id/textViewQtdProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNProduto"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textViewqtd"
+        android:layout_toRightOf="@+id/textViewqtd"
+        android:text="Quantidade"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textViewMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewqtd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="11dp"
+        android:text="Marca:"
+        android:textSize="17dp" />
+
+    <TextView
+
+        android:id="@+id/textViewMarcaProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewQtdProduto"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/textViewMarca"
+        android:layout_toRightOf="@+id/textViewMarca"
+        android:text="Marca"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

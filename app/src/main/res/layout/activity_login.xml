@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="70dp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginCpf"
+        android:inputType="number"
+        android:hint="CPF"
+        android:layout_below="@id/logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginSenha"
+        android:inputType="textPassword"
+        android:hint="Senha"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loginCpf"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading"
+        android:layout_marginTop="270dp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginSenha"
+        android:text="Entrar"
+        android:background="@drawable/button_androidshape"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginBottom="20dp"
+            android:text="Digite o Pedido"
+            android:textColor="@color/title_color"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextId"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/editTextNProduto"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint=" Produto "
+            android:padding="15dp"
+
+            />
+
+        <EditText
+            android:id="@+id/editTextQtdProduto"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint=" Quantidade"
+            android:inputType="number"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/editTextMarcaProduto"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint=" Marca do Produto"
+            android:padding="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:layout_marginLeft="9dp"
+            >
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:layout_marginRight="10dp"
+                android:id="@+id/buttonSalvar"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:background="@drawable/button_androidshape"/>
+            <Button
+                android:layout_width="170dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Estoque"
+                android:id="@+id/buttonEstoque"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/button_androidshape"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ListViewListinha"
+        android:layout_below="@id/LinearLayout">
+
+    </ListView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/BarradeProgresso"/>
+
+</RelativeLayout>
